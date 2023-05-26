@@ -1,0 +1,23 @@
+Have you disabled hibernation? If not use this command :)
+
+sudo pmset -a hibernatemode 0
+sudo rm /var/vm/sleepimage
+sudo mkdir /var/vm/sleepimage
+sudo pmset -a standby 0
+sudo pmset -a autopoweroff 0
+
+Hampus said:
+Have you disabled hibernation? If not use this command :)
+
+sudo pmset -a hibernatemode 0
+sudo rm /var/vm/sleepimage
+sudo mkdir /var/vm/sleepimage
+sudo pmset -a standby 0
+sudo pmset -a autopoweroff 0
+After using those commands I tried to put it to sleep, but it is showing the same behaviour as before.
+
+First it turns of the screens, then the keyboard goes dark, then the Powerbutton starts to fade and after about 5 seconds it turns back on the keyboard and seems to be waking up again, but then the display stays dark.
+
+Can you tell me your BIOS-Version, I recently did a downgrade since it froze after roughly 5 minutes on battery power, after the downgrade it seemed to be ok.
+
+Do you have any tips?
